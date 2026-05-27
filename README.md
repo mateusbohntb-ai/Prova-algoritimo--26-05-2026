@@ -8,15 +8,21 @@ turma : 2608
 
 ## Descrição do codigo 
 
-Eu ultilizei a matriz para ter um espaço na memoria .Iniciei o **equanto** para continuar um loop infinito onde o sistema so vai para quando digitar 6.Fiz  os escreval para determinar a decisão da pessoa contendo o **leia** e a variavel **opcao** para armazenar a opção e ser usado nos comandos **se** onde se ele digitar os numeros sugeridos irá para uma decisão diferente.
 
-Dcisão 1 
+Eu utilizei a matriz para ter um espaço na memória .Iniciei o **equanto** para continuar um loop infinito onde o sistema só vai para quando digitar 6.Fiz  os escreval para determinar a decisão da pessoa contendo o **leia** e a variável **opção** para armazenar a opção e ser usado nos comandos **se** onde se ele digitar os números sugeridos irá para uma decisão diferente.
 
-Aqui temos um uso do se a opcao  for igual a 1 ele tomará a decisão abaixo .Denro do codigo temos **se** quantidade maior que 10 ou seja ele ira limitar o numero de reservas a 10 se caso passar disso ele caira nessa condição.
 
-O senao sera a opçao de cadastro onde inicializarei  a quantidade recebendo quantidade + 1 para iniciar 
+Decisão 1
 
-com isso eu aplicarei a opção no escreval com o resultado a  variavel leitura recepera o valor e implementara na linha ou coluna na matriz como abaixo 
+
+Aqui temos um uso do se a opção  for igual a 1 ele tomará a decisão abaixo .Dentro do código temos **se** quantidade maior que 10 ou seja ele irá limitar o número de reservas a 10 se caso passar disso ele cairá nessa condição.
+
+
+O senao sera a opção de cadastro onde inicializará  a quantidade recebendo quantidade + 1 para iniciar
+
+
+com isso eu aplicarei a opção no escreval com o resultado a  variável leitura recupera o valor e implementar na linha ou coluna na matriz como abaixo
+
 
  se opcao  = 1 entao
 
@@ -56,7 +62,9 @@ com isso eu aplicarei a opção no escreval com o resultado a  variavel leitura 
 
 decisão 2 
 
-aqui usei o **achou** como logico para ver se a variavel é verdadeira ou falsa onde o usuario vai digitar a o nome da reserva  e o comando leia vai armazenar o resultado na variaveç **busca** tendo esse resultado ele verificara  usando o **para** a a linha indicando a linha da matriz onde ele passara linha por linha entao usara o se se caso a matriz for verdadeira  o achou recebera verdadeiro  e executara fazendo com que a reserva seja cancelada  caso contrario ele continuara falso e caira na outra decisao onde indentificara como não avendo nenhum resultado de busca.
+Aqui usei o **achou** como lógico para ver se a variável é verdadeira ou falsa onde o usuário vai digitar a o nome da reserva  e o comando leia vai armazenar o resultado na variável **busca** tendo esse resultado ele verificará  usando o **para** a a linha indicando a linha da matriz onde ele passará linha por linha então usará o se se caso a matriz for verdadeira  o achou receberá verdadeiro  e executa fazendo com que a reserva seja cancelada  caso contrário ele continuará falso e cairá na outra decisão onde identificaram como não havendo nenhum resultado de busca.
+
+
 
 
  se opcao = 2 entao
@@ -89,7 +97,9 @@ Decisão 3
 
 Usei o se com a variavel opcao como na anterior para tomar uma decisão 
 
-aqui usei o **achou** como logico para ver se a variavel é verdadeira ou falsa onde o usuario vai digitar a o nome da reserva  e o comando leia vai armazenar o resultado na variaveç **busca** tendo esse resultado ele verificara  usando o **para** a a linha indicando a linha da matriz onde ele passara linha por linha entao usara o se se caso a matriz for verdadeira  o achou recebera verdadeiro  e executara o codigo e mostrar a reserva pesquisada caso contrario ele continuara falso e caira na outra decisao onde indentificara como não avendo nenhum resultado de busca.
+aqui usei o **achou** como lógico para ver se a variável é verdadeira ou falsa onde o usuário vai digitar a o nome da reserva  e o comando leia vai armazenar o resultado na variável **busca** tendo esse resultado ele verificará  usando o **para** a a linha indicando a linha da matriz onde ele passará linha por linha então usará o se se caso a matriz for verdadeira  o achou receberá verdadeiro  e executar o código e mostrar a reserva pesquisada caso contrário ele continuará falso e cairá na outra decisão onde identificaram como não havendo nenhum resultado de busca.
+
+
 
   se opcao = 3 entao
       achou<-falso
@@ -114,7 +124,9 @@ aqui usei o **achou** como logico para ver se a variavel é verdadeira ou falsa 
 
 Decisão 4 
 
-Aqui é usado uma estrutura de repetição onde ele parassara coluna por coluna e linha por linha mostrando todos os dados recebidos no sitema desenvolvidos caso não á nenhuma reserva cadastrada ele ira cair na primeira condição onde mostrara a opção nenhuma reserva cadastrada 
+
+Aqui é usado uma estrutura de repetição onde ele passará coluna por coluna e linha por linha mostrando todos os dados recebidos no sistema desenvolvidos caso não há nenhuma reserva cadastrada ele irá cair na primeira condição onde mostrará a opção nenhuma reserva cadastrada
+
 
 
  se opcao = 4 entao
@@ -134,7 +146,8 @@ Aqui é usado uma estrutura de repetição onde ele parassara coluna por coluna 
 
 Decisão 5 
 
-Aqui averá uma estrutura de repetição parecida com a parte anterior so que aqui ele mostrara todas as reservas ativas caso não ele nao executara e com contador para contar o total de reservas e mostrar o total 
+Aqui haverá uma estrutura de repetição parecida com a parte anterior só que aqui ele mostrará todas as reservas ativas caso não ele não executa e com contador para contar o total de reservas e mostrar o total
+
 
 
 então ele lista todos os ativos e escreve o total 
