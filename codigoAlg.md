@@ -1,24 +1,36 @@
-# Prova-algoritimo--26-05-2026
+# Codigo 
+
+```js 
+
+algoritmo "Primeiro Programa"
+
+var
+  reservas:matriz [1..4 , 1..10] de caracter
+  quantidade,opcao,contador:inteiro
+  leitura,busca,linha,coluna:caracter
+  achou:logico
+inicio
+contador<-0
+  quantidade<-0
+  opcao<-0
+  enquanto opcao  <>  6 faca
+
+    escreval("####################################################################################")
+
+    escreval("Bem vindo ao restaurante seu João ")
+    escreval("####################################################################################")
+    escreval("Digite 1 para regitrar uma reserva ")
+    escreval("Digite 2 para cancelar uma reserva pelo nome ")
+    escreval("Digite 3 buscar a reserva pelo nome")
+    escreval("Digite 4 listar todas as reservas ")
+    escreval("Digite 5 exibir total de reservas")
+    escreval("Digite 6 sair do sistema")
+    leia(opcao)
+    escreval("####################################################################################")
+    limpatela
 
 
-## dados do aluno 
-**Aluno**:Mateus Bohn dos Santos 
-curso;informatica para internet
-turma : 2608
-
-## Descrição do codigo 
-
-Eu ultilizei a matriz para ter um espaço na memoria .Iniciei o **equanto** para continuar um loop infinito onde o sistema so vai para quando digitar 6.Fiz  os escreval para determinar a decisão da pessoa contendo o **leia** e a variavel **opcao** para armazenar a opção e ser usado nos comandos **se** onde se ele digitar os numeros sugeridos irá para uma decisão diferente.
-
-Dcisão 1 
-
-Aqui temos um uso do se a opcao  for igual a 1 ele tomará a decisão abaixo .Denro do codigo temos **se** quantidade maior que 10 ou seja ele ira limitar o numero de reservas a 10 se caso passar disso ele caira nessa condição.
-
-O senao sera a opçao de cadastro onde inicializarei  a quantidade recebendo quantidade + 1 para iniciar 
-
-com isso eu aplicarei a opção no escreval com o resultado a  variavel leitura recepera o valor e implementara na linha ou coluna na matriz como abaixo 
-
- se opcao  = 1 entao
+    se opcao  = 1 entao
 
       se quantidade > 10 entao
         escreval(" Se esgotaram as reservas ")
@@ -50,77 +62,70 @@ com isso eu aplicarei a opção no escreval com o resultado a  variavel leitura 
         reservas[quantidade , 4]<-leitura
 
         escreval("####################################################################################")
-        limpatela
+       
       fimse
     fimse
 
-decisão 2 
-
-aqui usei o **achou** como logico para ver se a variavel é verdadeira ou falsa onde o usuario vai digitar a o nome da reserva  e o comando leia vai armazenar o resultado na variaveç **busca** tendo esse resultado ele verificara  usando o **para** a a linha indicando a linha da matriz onde ele passara linha por linha entao usara o se se caso a matriz for verdadeira  o achou recebera verdadeiro  e executara fazendo com que a reserva seja cancelada  caso contrario ele continuara falso e caira na outra decisao onde indentificara como não avendo nenhum resultado de busca.
-
-
- se opcao = 2 entao
+    se opcao = 2 entao
       achou<-falso
-
+      escreval("####################################################################################")
       escreva("Digite o Nome para cancelar a reserva  ")
       leia(busca)
-
+      escreval("####################################################################################")
       para linha de 1 ate quantidade passo 1 faca
         se reservas[linha,1] = busca entao
 
           achou<-verdadeiro
 
           reservas[linha , 4 ]<-"Cancelada"
-
+          escreval("####################################################################################")
           escreval("Sua reserva foi cancelada")
+          escreval("####################################################################################")
         fimse
       fimpara
 
       se achou = falso entao
+        escreval("####################################################################################")
         escreval("Esse nome não possui reserva ")
+        escreval("####################################################################################")
       fimse
-      limpatela
+ 
     fimse
 
 
-
-
-Decisão 3 
-
-Usei o se com a variavel opcao como na anterior para tomar uma decisão 
-
-aqui usei o **achou** como logico para ver se a variavel é verdadeira ou falsa onde o usuario vai digitar a o nome da reserva  e o comando leia vai armazenar o resultado na variaveç **busca** tendo esse resultado ele verificara  usando o **para** a a linha indicando a linha da matriz onde ele passara linha por linha entao usara o se se caso a matriz for verdadeira  o achou recebera verdadeiro  e executara o codigo e mostrar a reserva pesquisada caso contrario ele continuara falso e caira na outra decisao onde indentificara como não avendo nenhum resultado de busca.
-
-  se opcao = 3 entao
+    se opcao = 3 entao
       achou<-falso
-
+      escreval("####################################################################################")
       escreva("Digite nome da reserva")
+      escreval("####################################################################################")
       leia(busca)
 
       para linha de 1 ate quantidade passo 1 faca
         se reservas[linha,1] = busca entao
 
           achou<-verdadeiro
+          escreval("####################################################################################")
           escreval("Nome: " ,reservas[linha ,1  ] ," Quantidade de pessoas: ",reservas[linha ,2 ] ,"Data da reserva" ,reservas[linha ,3 ] ,"Status da reserva " ,reservas[linha ,4 ])
+          escreval("####################################################################################")
         fimse
       fimpara
 
       se achou = falso entao
+        escreval("####################################################################################")
         escreval("Nenhum resultado encontrado nas reservas listadas")
+        escreval("####################################################################################")
       fimse
-      limpatela
+
     fimse
 
 
-Decisão 4 
-
-Aqui é usado uma estrutura de repetição onde ele parassara coluna por coluna e linha por linha mostrando todos os dados recebidos no sitema desenvolvidos caso não á nenhuma reserva cadastrada ele ira cair na primeira condição onde mostrara a opção nenhuma reserva cadastrada 
-
-
- se opcao = 4 entao
+    se opcao = 4 entao
       se quantidade = 0 entao
-        escreval("---------------    Nenhma reserva cadastrada    -----------------")
+        escreval("####################################################################################")
+        escreval("---------------     Nenhum reserva cadastrada   -----------------")
+        escreval("####################################################################################")
       senao
+        escreval("####################################################################################")
         escreval("|  Nome  | quantidade pessoas | Data | Status da reserva |")
         para linha de 1 ate quantidade passo 1 faca
           para coluna de 1 ate 4 passo 1 faca
@@ -128,18 +133,13 @@ Aqui é usado uma estrutura de repetição onde ele parassara coluna por coluna 
           fimpara
           escreva("  |")
           escreval("")
+          escreval("####################################################################################")
+       
         fimpara
       fimse
     fimse
 
-Decisão 5 
-
-Aqui averá uma estrutura de repetição parecida com a parte anterior so que aqui ele mostrara todas as reservas ativas caso não ele nao executara e com contador para contar o total de reservas e mostrar o total 
-
-
-então ele lista todos os ativos e escreve o total 
-
-     se opcao= 5 entao
+    se opcao= 5 entao
 
       escreva(" Total reservas ativas ")
 
@@ -157,6 +157,11 @@ contador<-contador+1
 escreval("Total ativos " ,contador)
     fimse
 
+
+
+
+  fimenquanto
+fimalgoritmo
 
 
 ```
